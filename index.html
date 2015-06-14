@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Geo Podcast</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900|Roboto+Slab:700' rel='stylesheet' type='text/css'>
+	<link href="assets/css/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="template-items">
+<script id="story-template" type="text/x-tmpl-mustache">
+{{#meta}}
+<section class="story" id="story-{{id}}">
+<nav class="story-nav">
+	<a href="#0" class="ico-button" data-action="header">Ho</a><a href="#0" class="ico-button" data-action="marker">M</a><a href="#0" class="ico-button" data-action="haltestellen">H</a><a href="#0" class="ico-button" data-action="map">Ma</a>
+</nav>
+
+<div class="story-wrapper">
+		<article class="story-header" style="background-image:url({{img.url}})">
+			<div class="header-inner">
+				<h1>{{meta.title}}</h1>
+				<h2><span class="story-region">{{ info.region }}</span> | 
+				<span class="story-land">{{ info.land }}</span></h2>
+			</div>
+			<div class="button open ico-button" data-action="marker">more info</div>
+		</article>
+
+
+		<article class="story-marker">
+			<div id="marker"></div>
+			<div class="button close ico-button" data-action="header">x</div>
+		</article>
+		
+		<article class="story-haltestellen" id="haltestellen">
+
+						{{#info}}
+		          {{#haltestellen}}
+		            <div class="haltestelle">{{.}}</div>
+		          {{/haltestellen}}
+		      {{/info}}
+		</article>
+		<article class="story-map" id="map">
+	</div>
+</section>
+{{/meta}}
+</script>
+<script id="marker-template" type="text/x-tmpl-mustache">
+{{#marker}}
+<div class="location-marker" data-id="{{id}}">
+		<div class="location-img"><img src="{{ teaser_image.url }}" alt=""></div>
+		<header>
+				<h1>{{title}}</h1>
+				<h2><span class="location-latitude">{{ pos.longitude }}</span> | 
+				<span class="location-longitude">{{ pos.latitude }}</span></h2>
+		</header>
+		<div id="play-button-{{id}}" class="play-button"></div>
+		<audio preload="true" class="location-audio" data-id="{{id}}">
+				<source src="{{ audio_src.mp4 }}" type="audio/mpeg">
+  			<source src="{{ audio_src.ogg }}" type="audio/ogg">
+			</audio>
+		<div class="location-content">
+			<p>{{text}}</p>
+		</div>
+</div>
+{{/marker}}
+</script>
+</div>
+<div class="load_scripts">
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/requestAnimationFrame.js"></script>
+<script type="text/javascript" src="assets/js/mustache.js"></script>
+<script type="text/javascript" src="assets/js/min/geolocation-min.js"></script>
+	</div>
+</body>
+</html>
