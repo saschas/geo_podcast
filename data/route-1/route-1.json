@@ -29,8 +29,9 @@
 			"url": "data/route-1/img/bvg-100-teaser.png"
 		},
 		"pos": {
-			"longitude": 13.3190403,
-			"latitude": 52.487401399999996
+			"address" : "S+U Alexanderplatz Bhf/Memhardstr. (Berlin), Deutschland",
+			"longitude": 52.521918,
+			"latitude": 13.413215
 		},
 		"audio_src": {
 			"mp4": "data/route-1/audio.mp3",
@@ -53,8 +54,9 @@
 			"url": "http://localhost:8000/data/route-1/img/meer.png"
 		},
 		"pos": {
-			"longitude": 13.3190403,
-			"latitude": 52.487401399999996
+			"address" : "S+U Alexanderplatz Bhf/Memhardstr. (Berlin), Mitte",
+			"longitude": 52.521556,
+			"latitude": 13.411158
 		},
 		"audio_src": {
 			"mp4": "data/route-1/audio.mp3",
@@ -77,8 +79,9 @@
 			"url": "data/route-1/img/bvg-100-teaser.png"
 		},
 		"pos": {
-			"longitude": 13.3190403,
-			"latitude": 52.487401399999996
+			"address" : "Spandauer Str./Marienkirche (Berlin)",
+			"longitude": 52.520025,
+			"latitude": 13.404825
 		},
 		"audio_src": {
 			"mp4": "data/route-1/audio.mp3",
@@ -101,8 +104,124 @@
 			"url": "http://localhost:8000/data/route-1/img/meer.png"
 		},
 		"pos": {
-			"longitude": 13.3190403,
-			"latitude": 52.487401399999996
+			"address" : "Schloßplatz 7, 10178 Berlin, Deutschland",
+			"longitude": 52.5185834,
+			"latitude": 13.3992769
+		},
+		"audio_src": {
+			"mp4": "data/route-1/audio.mp3",
+			"ogg": "data/route-1/audio.mp3"
+		}
+	}]
+	},{
+		"meta" : {
+			"id" : "02",
+			"title" : "Buslinie 200",
+			"img" : {
+				"url" : "data/route-1/img/bvg-200-teaser.png"
+			},
+			"info" : {
+				"region" : "Berlin",
+				"linie" : 100,
+				"haltestellen" : ["Alexanderplatz/Memhardstraße","S+U Alexanderplatz","Spandauer Straße/Marienkirche","Lustgarten","Staatsoper","Unter den Linden/Friedrichstraße","S+U Brandenburger Tor","Reichstag/Bundestag","Platz der Republik","Haus der Kulturen der Welt","Schloss Bellevue","Großer Stern","Nord. Botschaften/Adenauer-Stiftung","Lützowplatz","Schillstraße","Beyreuther Straße","Breitscheidplatz","S+U Zoologischer Garten","Hertzallee"],
+				"land" : "Deutschland"
+			}
+		},
+		"marker" : [{
+		"id": "0001",
+		"title": "Alexanderplatz/Memhardstraße",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+		"teaser_image": {
+			"width": 300,
+			"height": 200,
+			"caption":"untertitel",
+			"url": "data/route-1/img/bvg-100-teaser.png"
+		},
+		"main_image": {
+			"width": 1280,
+			"height": 800,		
+			"caption":"untertitel Hauptbild",
+			"url": "data/route-1/img/bvg-100-teaser.png"
+		},
+		"pos": {
+			"address" : "S+U Alexanderplatz Bhf/Memhardstr. (Berlin), Deutschland",
+			"longitude": 52.521918,
+			"latitude": 13.413215
+		},
+		"audio_src": {
+			"mp4": "data/route-1/audio.mp3",
+			"ogg": "data/route-1/audio.mp3"
+		}
+	}, {
+		"id": "0002",
+		"title": "S+U Alexanderplatz",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+		"teaser_image": {
+			"width": 300,
+			"height": 200,
+			"caption":"untertitel",
+			"url": "http://localhost:8000/data/route-1/img/meer.png"
+		},
+		"main_image": {
+			"width": 1280,
+			"height": 800,
+			"caption":"untertitel Hauptbild 2",
+			"url": "http://localhost:8000/data/route-1/img/meer.png"
+		},
+		"pos": {
+			"address" : "S+U Alexanderplatz Bhf/Memhardstr. (Berlin), Mitte",
+			"longitude": 52.521556,
+			"latitude": 13.411158
+		},
+		"audio_src": {
+			"mp4": "data/route-1/audio.mp3",
+			"ogg": "data/route-1/audio.mp3"
+		}
+	},{
+		"id": "0001",
+		"title": "Spandauer Straße/Marienkirche",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+		"teaser_image": {
+			"width": 300,
+			"height": 200,
+			"caption":"untertitel",
+			"url": "data/route-1/img/bvg-100-teaser.png"
+		},
+		"main_image": {
+			"width": 1280,
+			"height": 800,		
+			"caption":"untertitel Hauptbild",
+			"url": "data/route-1/img/bvg-100-teaser.png"
+		},
+		"pos": {
+			"address" : "Spandauer Str./Marienkirche (Berlin)",
+			"longitude": 52.520025,
+			"latitude": 13.404825
+		},
+		"audio_src": {
+			"mp4": "data/route-1/audio.mp3",
+			"ogg": "data/route-1/audio.mp3"
+		}
+	}, {
+		"id": "0002",
+		"title": "Lustgarten",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+		"teaser_image": {
+			"width": 300,
+			"height": 200,
+			"caption":"untertitel",
+			"url": "http://localhost:8000/data/route-1/img/meer.png"
+		},
+		"main_image": {
+			"width": 1280,
+			"height": 800,
+			"caption":"untertitel Hauptbild 2",
+			"url": "http://localhost:8000/data/route-1/img/meer.png"
+		},
+		"pos": {
+			"address" : "Schloßplatz 7, 10178 Berlin, Deutschland",
+			"longitude": 52.5185834,
+			"latitude": 13.3992769
 		},
 		"audio_src": {
 			"mp4": "data/route-1/audio.mp3",

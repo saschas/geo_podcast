@@ -1,4 +1,5 @@
-
+var markers = [];
+var map;
 function loadMarker(data) {
   var template = $('#marker-template').html();
   Mustache.parse(template);   // optional, speeds up future uses
@@ -6,35 +7,6 @@ function loadMarker(data) {
   $('body').html(rendered);
 }
 
-
-function build_Marker(data){
-
-var $container = $('.location-marker');
-//var $container = $('.location-marker');
-var $img = $('.location-img');
-var $latitude = $('.location-latitude');
-var $longitude = $('.location-longitude');
-var $content = $('.location-content');
-var $audio = $('.location-audio');
-		
-		$img.attr('data-width',data.teaser_image.width)
-			.attr('data-height',data.teaser_image.height)
-			.attr('data-original-imgage',data.main_image.url)
-			.attr('data-audio-src',data.audio_src.url);
-		$img.find('img').attr('src','http://localhost:8000/data/route-1/img/meer.png');//data.teaser_image.url
-		$latitude.text(data.pos.latitude);
-		$longitude.text(data.pos.longitude);
-
-    $audio.find('source').attr('type','audio/mpeg').attr('src', data.audio_src.mp4);
-		$audio.find('source').attr('type','audio/ogg').attr('src', data.audio_src.ogg);
-		$container.attr('data-id',data.id)
-      .attr('data-longitude',data.longitude)
-			.attr('data-latitude',data.latitude);
-		$content.find('h1').text(data.title);
-		$content.find('p').text(data.text);
-
-
-}
 
 
 $.ajax({ 
@@ -44,28 +16,25 @@ $.ajax({
     dataType: 'json',
     success: function (data) {
       //loadMarker(data);
-      data.story.forEach(function(single){
-        console.log(single);
       var holder = $('<div/>');
-      holder.attr('class','holder')
-          .prependTo('body');
-
+      holder.attr('class','holder').prependTo('body');
+      data.story.forEach(function(single){
         var $id = '#story-' + single.meta.id;
-      var template_story = $("#story-template").html();
-      var html_story = Mustache.to_html(template_story, single);
-          holder.html(html_story);
+        var template_story = $("#story-template").html();
+        var html_story = Mustache.to_html(template_story, single);
+            holder.append(html_story);
 
-      var template_marker = $("#marker-template").html();
-      var html_marker = Mustache.to_html(template_marker, single);
-          $($id).find('#marker').html(html_marker);
+        var template_marker = $("#marker-template").html();
+        var html_marker = Mustache.to_html(template_marker, single);
+          $($id).find('#marker').append(html_marker);
+
+        var $map = $($id).find('#map-canvas').get(0);
+        google.maps.event.addDomListener(window, 'load', mapper($map,single));
       });
+
+
       bind_events();
 
-      //data.forEach(function(marker){
-      //  console.log(marker);
-      //  //build_Marker(marker);
-//
-      //});
  			
     },
     error : function(error){
@@ -157,7 +126,7 @@ loop(time);
 
 //__________________________________________________
 
-function bind_events(){
+function bind_events(data){
 var $body = $('body');
 var $btns = $('.ico-button');
 
@@ -168,13 +137,23 @@ var $articles = $('article');
 
 $btns.bind({
   click : function(){
-  
+    var $parent_id = $(this).data('id');
+    var $section = $('#story-'+$parent_id);
     var $action = $(this).data('action');
     var $selector = '.story-'+$action;
-    console.log($selector);
-        $articles.fadeOut();
+    var $articles = $section.find('article');
 
-        $($selector).fadeIn(200);
+    if($(this).data('pos') != undefined){
+      console.log(map);
+      map.setCenter(markers[1].getPosition());
+    }
+    $articles.fadeOut().animate({
+      opacity : 0
+    },0);;
+
+    $section.find($selector).animate({
+      opacity : 1
+    },0).fadeIn(200);
   }
 });
 
@@ -184,9 +163,67 @@ $btns.bind({
   }
 });
 
-console.log($btn_haltestellen,$btn_marker);
+}
+
+
+
+function mapper(map,data) {
+  var directionsDisplay;
+  var directionsService = new google.maps.DirectionsService();
+  directionsDisplay = new google.maps.DirectionsRenderer();
+  var last_station = data.marker[0].pos.address;
+  var start_pos = new google.maps.LatLng(data.marker[0].pos.longitude,data.marker[0].pos.latitude);
+  var mapOptions = {
+    zoom: 12,
+    center: start_pos
+  };
+
+  map = new google.maps.Map(map,mapOptions);
+  console.log(map);
+  directionsDisplay.setMap(map);
+  var goldStar = {
+    //path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
+    //fillColor: 'yellow',
+    //fillOpacity: 0.8,
+    scale: 1,
+    strokeColor: 'gold',
+    strokeWeight: 14
+  };
+
+data.marker.forEach(function(el){
+  console.log(el)
+  var marker_pos = new google.maps.LatLng(el.pos.longitude,el.pos.latitude);
+  var marker = new google.maps.Marker({
+    position: marker_pos,
+    //icon: goldStar,
+    map: map,
+    title : el.title
+  });
+  markers.push(marker);
+  calcRoute(last_station,el.pos.address);
+  last_station = el.pos.address;
+  
+});
+
+function calcRoute(start,end) {
+  console.log(start);
+  var start = start;
+  var end = end;
+  var request = {
+    origin:start,
+    destination:end,
+    travelMode: google.maps.TravelMode.DRIVING
+  };
+  directionsService.route(request, function(result, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+      directionsDisplay.setDirections(result);
+    }
+  });
+}
+  
 
 }
+
 
 
 

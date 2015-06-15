@@ -13,7 +13,7 @@
 {{#meta}}
 <section class="story" id="story-{{id}}">
 <nav class="story-nav">
-	<a href="#0" class="ico-button" data-action="header">Ho</a><a href="#0" class="ico-button" data-action="marker">M</a><a href="#0" class="ico-button" data-action="haltestellen">H</a><a href="#0" class="ico-button" data-action="map">Ma</a>
+	<a href="#0" class="ico-button" data-action="header" data-id="{{id}}">Ho</a><a href="#0" class="ico-button" data-action="marker" data-id="{{id}}">M</a><a href="#0" class="ico-button" data-action="haltestellen" data-id="{{id}}">H</a><a href="#0" class="ico-button" data-action="map" data-id="{{id}}">Ma</a>
 </nav>
 
 <div class="story-wrapper">
@@ -23,24 +23,23 @@
 				<h2><span class="story-region">{{ info.region }}</span> | 
 				<span class="story-land">{{ info.land }}</span></h2>
 			</div>
-			<div class="button open ico-button" data-action="marker">more info</div>
+			<div class="button open ico-button" data-action="marker" data-id="{{id}}">more info</div>
 		</article>
 
 
 		<article class="story-marker">
 			<div id="marker"></div>
-			<div class="button close ico-button" data-action="header">x</div>
+			<div class="button close ico-button" data-action="header" data-id="{{id}}">x</div>
 		</article>
 		
 		<article class="story-haltestellen" id="haltestellen">
-
-						{{#info}}
-		          {{#haltestellen}}
-		            <div class="haltestelle">{{.}}</div>
-		          {{/haltestellen}}
-		      {{/info}}
+						{{#marker}}
+							<div class="haltestelle ico-button" data-action="map" data-pos="{{pos.latitude}},{{pos.longitude}}" data-id="{{id}}">{{title}}</div>
+						{{/marker}}
 		</article>
 		<article class="story-map" id="map">
+		<div id="map-canvas"></div>
+		</article>
 	</div>
 </section>
 {{/meta}}
@@ -71,7 +70,9 @@
 
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/requestAnimationFrame.js"></script>
+
 <script type="text/javascript" src="assets/js/mustache.js"></script>
+
 <script type="text/javascript" src="assets/js/min/geolocation-min.js"></script>
 	</div>
 </body>
