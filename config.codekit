@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19022",
+"creatorBuild": "19033",
 "files": {
 	"\/assets\/css\/stylesheet.css": {
 		"fileType": 16,
@@ -10,6 +10,61 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/img\/bg_blur-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 511851,
+		"inputAbbreviatedPath": "\/assets\/img\/bg_blur-1.png",
+		"outputAbbreviatedPath": "\/assets\/img\/bg_blur-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/bg_blur-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 533532,
+		"inputAbbreviatedPath": "\/assets\/img\/bg_blur-2.png",
+		"outputAbbreviatedPath": "\/assets\/img\/bg_blur-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/bg_blur-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 519956,
+		"inputAbbreviatedPath": "\/assets\/img\/bg_blur-3.png",
+		"outputAbbreviatedPath": "\/assets\/img\/bg_blur-3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/bg_blur-4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 542189,
+		"inputAbbreviatedPath": "\/assets\/img\/bg_blur-4.png",
+		"outputAbbreviatedPath": "\/assets\/img\/bg_blur-4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/bg_blur-5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 545403,
+		"inputAbbreviatedPath": "\/assets\/img\/bg_blur-5.png",
+		"outputAbbreviatedPath": "\/assets\/img\/bg_blur-5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/assets\/img\/grid.jpg": {
 		"fileType": 16384,
@@ -33,6 +88,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/js\/connection.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/connection.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/connection-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/geolocation.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -44,12 +110,34 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/jquery.couch.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/jquery.couch.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.couch-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/jquery.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/jquery.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/min\/connection-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/min\/connection-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/connection-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -88,6 +176,22 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/scss\/_editor.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/scss\/_editor.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_editor.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/assets\/scss\/stylesheet.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -122,6 +226,17 @@
 		"initialSize": 459389,
 		"inputAbbreviatedPath": "\/data\/route-1\/img\/bvg-100-teaser.png",
 		"outputAbbreviatedPath": "\/data\/route-1\/img\/bvg-100-teaser.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/data\/route-1\/img\/bvg-200-teaser.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44074,
+		"inputAbbreviatedPath": "\/data\/route-1\/img\/bvg-200-teaser.png",
+		"outputAbbreviatedPath": "\/data\/route-1\/img\/bvg-200-teaser.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

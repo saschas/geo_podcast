@@ -13,106 +13,481 @@
 			}
 		},
 		"marker" : [{
-		"id": "0001",
-		"title": "Alexanderplatz/Memhardstraße",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
-		"teaser_image": {
-			"width": 300,
-			"height": 200,
-			"caption":"untertitel",
-			"url": "data/route-1/img/bvg-100-teaser.png"
-		},
-		"main_image": {
-			"width": 1280,
-			"height": 800,		
-			"caption":"untertitel Hauptbild",
-			"url": "data/route-1/img/bvg-100-teaser.png"
-		},
-		"pos": {
-			"address" : "S+U Alexanderplatz Bhf/Memhardstr. (Berlin), Deutschland",
-			"longitude": 52.521918,
-			"latitude": 13.413215
-		},
-		"audio_src": {
-			"mp4": "data/route-1/audio.mp3",
-			"ogg": "data/route-1/audio.mp3"
-		}
-	}, {
-		"id": "0002",
-		"title": "S+U Alexanderplatz",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
-		"teaser_image": {
-			"width": 300,
-			"height": 200,
-			"caption":"untertitel",
-			"url": "http://localhost:8000/data/route-1/img/meer.png"
-		},
-		"main_image": {
-			"width": 1280,
-			"height": 800,
-			"caption":"untertitel Hauptbild 2",
-			"url": "http://localhost:8000/data/route-1/img/meer.png"
-		},
-		"pos": {
-			"address" : "S+U Alexanderplatz Bhf/Memhardstr. (Berlin), Mitte",
-			"longitude": 52.521556,
-			"latitude": 13.411158
-		},
-		"audio_src": {
-			"mp4": "data/route-1/audio.mp3",
-			"ogg": "data/route-1/audio.mp3"
-		}
-	},{
-		"id": "0001",
-		"title": "Spandauer Straße/Marienkirche",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
-		"teaser_image": {
-			"width": 300,
-			"height": 200,
-			"caption":"untertitel",
-			"url": "data/route-1/img/bvg-100-teaser.png"
-		},
-		"main_image": {
-			"width": 1280,
-			"height": 800,		
-			"caption":"untertitel Hauptbild",
-			"url": "data/route-1/img/bvg-100-teaser.png"
-		},
-		"pos": {
-			"address" : "Spandauer Str./Marienkirche (Berlin)",
-			"longitude": 52.520025,
-			"latitude": 13.404825
-		},
-		"audio_src": {
-			"mp4": "data/route-1/audio.mp3",
-			"ogg": "data/route-1/audio.mp3"
-		}
-	}, {
-		"id": "0002",
-		"title": "Lustgarten",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
-		"teaser_image": {
-			"width": 300,
-			"height": 200,
-			"caption":"untertitel",
-			"url": "http://localhost:8000/data/route-1/img/meer.png"
-		},
-		"main_image": {
-			"width": 1280,
-			"height": 800,
-			"caption":"untertitel Hauptbild 2",
-			"url": "http://localhost:8000/data/route-1/img/meer.png"
-		},
-		"pos": {
-			"address" : "Schloßplatz 7, 10178 Berlin, Deutschland",
-			"longitude": 52.5185834,
-			"latitude": 13.3992769
-		},
-		"audio_src": {
-			"mp4": "data/route-1/audio.mp3",
-			"ogg": "data/route-1/audio.mp3"
-		}
-	}]
+	"id": "0001",
+	"title": "Alexanderplatz/Memhardstra\u00dfe",
+	"text": "Haltestelle f\u00fcr den Bus der Linie 100 am Dom in Berlins Mitte. Der 100-er Bus ist bei Berlin-Touristen beliebt, weil zum Preis eines Einzelfahrscheins eine Vielzahl von Sehensw\u00fcrdigkeiten angesteuert werden.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "S+U Alexanderplatz Bhf/Memhardstr. (Berlin), Deutschland",
+		"longitude": 52.521918,
+		"latitude": 13.413215
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "0002",
+	"title": "S+U Alexanderplatz",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "S+U Alexanderplatz (Berlin), Deutschland",
+		"longitude": 52.521918,
+		"latitude": 13.413215
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "0003",
+	"title": "Spandauer Stra\u00dfe/Marienkirche",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "Spandauer Stra\u00dfe/Marienkirche",
+		"longitude": 52.520025,
+		"latitude": 13.404825
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "0004",
+	"title": "Lustgarten",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "Lustgarten, Berlin, Deutschland",
+		"longitude": 52.518590,
+		"latitude": 13.399688
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "0005",
+	"title": "Staatsoper",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "Staatsoper (Berlin), Deutschland",
+		"longitude": 52.516826,
+		"latitude": 13.394712
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "0006",
+	"title": "Unter den Linden/Friedrichstra\u00dfe",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "Unter den Linden/Friedrichstra\u00dfe (Berlin), Deutschland",
+		"longitude": 52.517184,
+		"latitude": 13.389089
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "0007",
+	"title": "S+U Brandenburger Tor",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "S+U Brandenburger Tor",
+		"longitude": 52.516275,
+		"latitude": 13.377704
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "0008",
+	"title": "Reichstag/Bundestag",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "Reichstag/Bundestag (Berlin), Deutschland",
+		"longitude": 52.518596,
+		"latitude": 13.376069
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "0009",
+	"title": "Platz der Republik",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "Platz der Republik (Berlin), Deutschland",
+		"longitude": 52.518535,
+		"latitude": 13.373188
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "00010",
+	"title": "Haus der Kulturen der Welt",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "Haus der Kulturen der Welt, (Berlin), Deutschland",
+		"longitude": 52.520007,
+		"latitude": 13.404954
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "00011",
+	"title": "Schloss Bellevue",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "Schloss Bellevue, (Berlin), Deutschland",
+		"longitude": 52.517573,
+		"latitude": 13.352793
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "00012",
+	"title": "Gro\u00dfer Stern",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "Gro\u00dfer Stern, (Berlin), Deutschland",
+		"longitude": 52.514518,
+		"latitude": 13.350105
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "00013",
+	"title": "Nord. Botschaften/Adenauer-Stiftung",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "Nord. Botschaften/Adenauer-Stiftung, (Berlin), Deutschland",
+		"longitude": 52.509593,
+		"latitude": 13.351406
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "00014",
+	"title": "L\u00fctzowplatz",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "L\u00fctzowplatz, (Berlin), Deutschland",
+		"longitude": 52.504173,
+		"latitude": 13.352008
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "00015",
+	"title": "Schillstra\u00dfe",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "Schillstra\u00dfe, (Berlin), Deutschland",
+		"longitude": 52.503822,
+		"latitude": 13.350550
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "00016",
+	"title": "Beyreuther Stra\u00dfe",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "Beyreuther Stra\u00dfe (Berlin), Deutschland",
+		"longitude": 52.502329,
+		"latitude": 13.344165
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "00017",
+	"title": "Breitscheidplatz",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "Breitscheidplatz (Berlin), Deutschland",
+		"longitude": 52.504886,
+		"latitude": 13.335511
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "00018",
+	"title": "S+U Zoologischer Garten",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "S+U Zoologischer Garten (Berlin), Deutschland",
+		"longitude": 52.507920,
+		"latitude": 13.337755
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}, {
+	"id": "00019",
+	"title": "Hertzallee",
+	"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero consequatur quod provident eos, accusamus eveniet itaque corporis debitis pariatur excepturi, dolorum officiis repellendus aperiam iusto possimus aliquam repellat a.",
+	"teaser_image": {
+		"width": 300,
+		"height": 200,
+		"caption": "untertitel",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"main_image": {
+		"width": 1280,
+		"height": 800,
+		"caption": "untertitel Hauptbild",
+		"url": "data/route-1/img/bvg-100-teaser.png"
+	},
+	"pos": {
+		"address": "Hertzallee (Berlin), Deutschland",
+		"longitude": 52.509567,
+		"latitude": 13.331237
+	},
+	"audio_src": {
+		"mp4": "data/route-1/audio.mp3",
+		"ogg": "data/route-1/audio.mp3"
+	}
+}]
 	},{
 		"meta" : {
 			"id" : "02",

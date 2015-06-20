@@ -1,0 +1,51 @@
+section.menu {
+  position: fixed;
+  right: 0;
+  width: 250px;
+  padding: 1em;
+  background-color: #fff;
+  height: 100%;
+  z-index:99;
+  overflow:scroll;
+  box-shadow: 0 0 1em 0 #000;
+
+  div{
+  	position:relative;
+  	padding: 4px 0;
+  }
+
+  h3 {
+  	margin-top: 1em;
+  	margin-bottom:4px;
+  	font-size: 12px;
+	}
+	
+	input {
+  	width: 100%;
+  	line-height: 2em;
+  	margin-bottom: 5px;
+  	border-radius: 4px;
+  	border: 1px solid #ccc;
+  	padding: 2px;
+	}
+	input[type="submit"] {
+	  margin-top: 2em;
+	  background-color: rgb(141, 217, 141);
+	  border-radius: 5px;
+	  border: 0;
+	  color: #4F4F4F;
+	}
+
+}
+
+label {
+  font-size: 10px;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 10px;
+  padding-left: 5px;
+  color: #ccc;
+}

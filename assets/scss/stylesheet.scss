@@ -10,19 +10,18 @@ html,body{
 }
 
 body{
-
-	font-family: 'Roboto', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 h1{
 	font-size: 2em;
 	font-weight:900;
-	font-family: 'Roboto', serif;
+  font-family: 'Droid Sans', sans-serif;
 }
 h2{
 	font-weight:300;
 	font-size:1em;
-	font-family: 'Roboto', serif;
+  font-family: 'Droid Sans', sans-serif;
 	color: #FBE973;
 }
 
@@ -40,23 +39,21 @@ nav.story-nav {
   z-index:99;
 }
 
-a.ico-button {
-  width: 35px;
-  height: 35px;
+a.ico-button {width: 35px;
+  height: 80%;
   background-color: $story-color-2;
   display: inline-block;
   margin-right: 5px;
   top: 50%;
-  font-weight:900;
+  font-weight: 900;
   position: relative;
   transform: translateY(-50%);
   left: 6px;
-  color:#555;
-  text-align:center;
-  line-height:35px;
-  text-decoration:none;
+  color: #555;
+  text-align: center;
+  line-height: 25px;
+  text-decoration: none;
   border-radius: 3px;
-
   &:hover{
   	background:#ccc;
   }
@@ -93,13 +90,12 @@ a.ico-button {
 
 //_________________________________________
 
-article#map {
-  width: 100%;
-  height: 100%;
+#map {
+  width: 50%;
+  height: 60%;
   position: absolute;
   top: 0;
-  left: 0;
-  opacity: 0;
+  left: 50%;
   box-shadow: inset 0 0 4px 0 #000;
   z-index: 1;
 }
@@ -124,19 +120,21 @@ div#map-canvas {
 
 .story{
 	background: $story-color-1;
-  width: 220px;
+  width: 100%;
   color: #fff;
   position: relative;
    float: left;
   margin-right: 1em;
+  margin-bottom: 1em;
   border-radius: 5px;
   overflow: hidden;
+  max-width: 600px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
 
 	&:after{
 		content:'';
 		display:block;
-		padding-top:150%;
+		padding-top:60%;
 		position: relative;
 	}
 
@@ -165,14 +163,42 @@ div#map-canvas {
 
 .story-marker {
   top: 0;
+  opacity: 0;
   background-color: $story-color-1;
   z-index: 9;
-  display:none;
   font-size: 60%;
   position: absolute;
   width: 100%;
   height: 100%;
 }
+
+.story-marker-items {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  overflow: scroll;
+}
+
+
+//_________________________________________
+.story{
+  transition-duration:.5s;
+}
+.story.active{
+  width:100%;
+}
+.story.inactive{
+  width:50%;
+}
+
+.story.inactive .story-header {
+  opacity: 1!important;
+  display: block!important;
+}
+.story.inactive .story-marker {
+  opacity: 0!important;
+}
+
 
 
 //_________________________________________
@@ -187,14 +213,15 @@ div#map-canvas {
   display: none;
 }
 
-.haltestelle {
-  width: 100%;
-  line-height: 10px;
-  background-color: #333;
-  font-size: 80%;
-  padding: 1em;
-  margin-bottom: 2px;
-  padding-left: 50px;
+a.haltestelle {
+  display: block;
+  width: inherit;
+  left: 0;
+  right: 0;
+  margin: 0 auto 2px;
+  padding: .5em;
+  line-height: 25px;
+  top: 20px;
 }
 
 //_________________________________________
@@ -215,8 +242,10 @@ div#map-canvas {
 }
 
 .location-marker h1 {
-	font-size:1.6em;
+	font-size: 1.6em;
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .location-marker h2{
@@ -232,16 +261,17 @@ div#map-canvas {
 .location-marker header {
   padding: 3px;
   position: absolute;
-  width: 70%;
-  left: 30%;
+  width: 100%;
+  padding-left: 40px;
 }
 
 .location-img {
-  height: 100%;
+    height: 100%;
   position: absolute;
   width: 30%;
   top: 0;
   left: 0;
+  display: none;
 }
 .location-img img{
 	width: 100%;
@@ -255,21 +285,27 @@ div#map-canvas {
 }
 
 .location-content{
-	padding:1em;
-	display:none;
+	position: absolute;
+  width: 50%;
+  height: 40%;
+  padding: 2em;
+  bottom: 0;
+  right: 0;
+  display:none;
+  background-color: #333;
 }
 //_____________________________________ Play
 .play-button {
   width: 20px;
   height: 20px;
   position: absolute;
-  right: 10px;
+  left: 10px;
   top: 0;
   bottom: 0;
   margin: auto;
   background-color: #fff;
   border-radius: 50%;
-	cursor:pointer;
+  cursor: pointer;
 	&:hover {
   	background: #FBE973;
   	box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 1);
@@ -334,3 +370,6 @@ div#map-canvas {
   	}
   }
 }
+
+
+@import 'editor';

@@ -8,17 +8,17 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Droid Sans', sans-serif; }
 
 h1 {
   font-size: 2em;
   font-weight: 900;
-  font-family: 'Roboto', serif; }
+  font-family: 'Droid Sans', sans-serif; }
 
 h2 {
   font-weight: 300;
   font-size: 1em;
-  font-family: 'Roboto', serif;
+  font-family: 'Droid Sans', sans-serif;
   color: #FBE973; }
 
 nav.story-nav {
@@ -30,7 +30,7 @@ nav.story-nav {
 
 a.ico-button {
   width: 35px;
-  height: 35px;
+  height: 80%;
   background-color: #fee955;
   display: inline-block;
   margin-right: 5px;
@@ -43,7 +43,7 @@ a.ico-button {
   left: 6px;
   color: #555;
   text-align: center;
-  line-height: 35px;
+  line-height: 25px;
   text-decoration: none;
   border-radius: 3px; }
   a.ico-button:hover {
@@ -72,13 +72,12 @@ a.ico-button {
   background-size: 100px;
   background-image: url(../img/grid.png); }
 
-article#map {
-  width: 100%;
-  height: 100%;
+#map {
+  width: 50%;
+  height: 60%;
   position: absolute;
   top: 0;
-  left: 0;
-  opacity: 0;
+  left: 50%;
   box-shadow: inset 0 0 4px 0 #000;
   z-index: 1; }
 
@@ -97,18 +96,20 @@ div#map-canvas {
 
 .story {
   background: #0a79fe;
-  width: 220px;
+  width: 100%;
   color: #fff;
   position: relative;
   float: left;
   margin-right: 1em;
+  margin-bottom: 1em;
   border-radius: 5px;
   overflow: hidden;
+  max-width: 600px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4); }
   .story:after {
     content: '';
     display: block;
-    padding-top: 150%;
+    padding-top: 60%;
     position: relative; }
   .story .story-header {
     width: 100%;
@@ -130,13 +131,36 @@ div#map-canvas {
 
 .story-marker {
   top: 0;
+  opacity: 0;
   background-color: #0a79fe;
   z-index: 9;
-  display: none;
   font-size: 60%;
   position: absolute;
   width: 100%;
   height: 100%; }
+
+.story-marker-items {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  overflow: scroll; }
+
+.story {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s; }
+
+.story.active {
+  width: 100%; }
+
+.story.inactive {
+  width: 50%; }
+
+.story.inactive .story-header {
+  opacity: 1 !important;
+  display: block !important; }
+
+.story.inactive .story-marker {
+  opacity: 0 !important; }
 
 .story-haltestellen {
   position: absolute;
@@ -147,14 +171,15 @@ div#map-canvas {
   overflow: scroll;
   display: none; }
 
-.haltestelle {
-  width: 100%;
-  line-height: 10px;
-  background-color: #333;
-  font-size: 80%;
-  padding: 1em;
-  margin-bottom: 2px;
-  padding-left: 50px; }
+a.haltestelle {
+  display: block;
+  width: inherit;
+  left: 0;
+  right: 0;
+  margin: 0 auto 2px;
+  padding: .5em;
+  line-height: 25px;
+  top: 20px; }
 
 .location-marker {
   height: 50px;
@@ -170,7 +195,9 @@ div#map-canvas {
 
 .location-marker h1 {
   font-size: 1.6em;
-  font-weight: 300; }
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .location-marker h2 {
   color: #222; }
@@ -183,15 +210,16 @@ div#map-canvas {
 .location-marker header {
   padding: 3px;
   position: absolute;
-  width: 70%;
-  left: 30%; }
+  width: 100%;
+  padding-left: 40px; }
 
 .location-img {
   height: 100%;
   position: absolute;
   width: 30%;
   top: 0;
-  left: 0; }
+  left: 0;
+  display: none; }
 
 .location-img img {
   width: 100%;
@@ -204,14 +232,20 @@ div#map-canvas {
   bottom: -100%; }
 
 .location-content {
-  padding: 1em;
-  display: none; }
+  position: absolute;
+  width: 50%;
+  height: 40%;
+  padding: 2em;
+  bottom: 0;
+  right: 0;
+  display: none;
+  background-color: #333; }
 
 .play-button {
   width: 20px;
   height: 20px;
   position: absolute;
-  right: 10px;
+  left: 10px;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -272,5 +306,47 @@ div#map-canvas {
     .button.close:hover {
       color: #fff;
       background: #0a79fe; }
+
+section.menu {
+  position: fixed;
+  right: 0;
+  width: 250px;
+  padding: 1em;
+  background-color: #fff;
+  height: 100%;
+  z-index: 99;
+  overflow: scroll;
+  box-shadow: 0 0 1em 0 #000; }
+  section.menu div {
+    position: relative;
+    padding: 4px 0; }
+  section.menu h3 {
+    margin-top: 1em;
+    margin-bottom: 4px;
+    font-size: 12px; }
+  section.menu input {
+    width: 100%;
+    line-height: 2em;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 2px; }
+  section.menu input[type="submit"] {
+    margin-top: 2em;
+    background-color: #8dd98d;
+    border-radius: 5px;
+    border: 0;
+    color: #4F4F4F; }
+
+label {
+  font-size: 10px;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 10px;
+  padding-left: 5px;
+  color: #ccc; }
 
 /*# sourceMappingURL=stylesheet.css.map */
